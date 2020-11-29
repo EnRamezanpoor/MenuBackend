@@ -179,7 +179,7 @@ typedef MenuItem& MenuItemRef;
 class MenuBackend {
   public:
 
-    MenuBackend(cb_use menuUse, cb_change menuChange = 0) : root("MenuRoot") {
+    MenuBackend(cb_menuUse, cb_menuChange = 0) : root("MenuRoot") {
       current = &root;
       root.left = &root;
       cb_menuChange = menuChange;
